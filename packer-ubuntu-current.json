@@ -52,7 +52,7 @@
   "provisioners": [
     {
       "override": {
-        "virtualbox-iso": {
+        "ubuntu-current": {
           "execute_command": "echo 'vagrant'|sudo -S sh '{{.Path}}'"
         }
       },
