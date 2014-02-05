@@ -24,6 +24,7 @@
       "ssh_username": "vagrant",
       "ssh_wait_timeout": "10000s",
       "type": "virtualbox-iso",
+      "name": "ubuntu-current",
       "vboxmanage": [
         [
           "modifyvm",
