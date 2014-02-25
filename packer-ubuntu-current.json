@@ -44,7 +44,7 @@
   ],
   "post-processors": [
     {
-      "output": "ubuntu-13.10-server-amd64.box",
+      "output": "packer-ubuntu-current.box",
       "type": "vagrant",
       "vagrantfile_template": "scripts/Vagrantfile"
     }
