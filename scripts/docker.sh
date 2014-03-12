@@ -22,4 +22,4 @@ echo deb https://get.docker.io/ubuntu docker main > /etc/apt/sources.list.d/dock
 apt-get update
 
 # Install. Confirm install.
-apt-get install -y lxc-docker
+apt-get install -y cgroup-lite lxc-docker
