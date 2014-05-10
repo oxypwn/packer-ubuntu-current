@@ -64,6 +64,7 @@
         "scripts/kernel.sh",
         "scripts/docker.sh",
         "scripts/chef.sh",
+	"scripts/puppet.sh",
         "scripts/cleanup.sh"
       ],
       "type": "shell"
