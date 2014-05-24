@@ -1,0 +1,26 @@
+{
+  "builders": [{
+    "name": "ubuntu-current-digitalocean",
+    "type": "digitalocean",
+    "image_id": 3101918,
+    "region": "ams1",
+    "snapshot_name": "ubuntu-current-{{timestamp}}"
+  }],
+  "provisioners": [
+    {
+      "override": {
+        "ubuntu-current-digitalocean": {
+          "execute_command": "echo 'vagrant'|sudo -S bash '{{.Path}}'"
+        }
+      },
+      "scripts": [
+        "scripts/base.sh",
+        "scripts/docker.sh",
+        "scripts/chef.sh",
+	"scripts/puppet.sh",
+	"scripts/vagrant.sh"
+      ],
+      "type": "shell"
+    }
+  ]
+}
