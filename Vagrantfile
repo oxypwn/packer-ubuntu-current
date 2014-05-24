@@ -11,10 +11,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Every Vagrant virtual environment requires a box to build off of.
   config.vm.box = "vagrant_machine"
+  config.ssh.private_key_path = "~/.ssh/id_rsa"
 
   # The url from where the 'config.vm.box' box will be fetched if it
   # doesn't already exist on the user's system.
-  config.vm.box_url = "ubuntu-13.10-server-amd64.box"
+  config.vm.box_url = "packer-ubuntu-current.box"
 
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
