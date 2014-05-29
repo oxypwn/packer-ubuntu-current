@@ -21,5 +21,5 @@ ssldir=/var/lib/puppet/ssl
 rundir=/var/run/puppet
 factpath=$vardir/lib/facter
 templatedir=$confdir/templates
-server=my-puppet-master.mydomain.com
+server=my-puppet-master.home.lan
 EOF
