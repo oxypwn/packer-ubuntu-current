@@ -4,7 +4,8 @@
 id vagrant
 if [ "$?" == 1 ]; then
 	groupadd vagrant
-	useradd -m -g vagrant -G docker,sudo -s /bin/bash vagrant
+	groupadd permit_ssh_in
+	useradd -m -g vagrant -G docker,sudo,permit_ssh_in -s /bin/bash vagrant
 else
 	# Setup sudo to allow no-password sudo for "sudo"
 	usermod -a -G sudo vagrant
